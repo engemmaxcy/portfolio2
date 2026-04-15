@@ -7,10 +7,39 @@
     name="viewport"
     content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
+  <style>
+    .toast-success {
+      background-color: #28a745 !important;
+      color: white !important;
+    }
+
+    .toast-error {
+      background-color: #dc3545 !important;
+      color: white !important;
+    }
+
+    .toast-warning {
+      background-color: rgb(229, 156, 54);
+      color: black;
+    }
+
+    .modal-fullscreen {
+      width: 100vw !important;
+      height: 100vh !important;
+      margin: 0 !important;
+      top: 0 !important;
+      left: 0 !important;
+    }
+  </style>
+
   <!-- SEO Meta Tags -->
   <meta name="description" content="Your description" />
   <meta name="author" content="Ogangi Emmanuel" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  
   <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
   <meta property="og:site_name" content="" />
   <!-- website name -->
@@ -73,22 +102,11 @@
           <li class="nav-item">
             <a class="nav-link page-scroll" href="#services">Services</a>
           </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="dropdown01"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false">Drop</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item page-scroll" href="project.php">Project Details</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item page-scroll" href="terms.php">Terms Conditions</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item page-scroll" href="privacy.php">Privacy Policy</a>
-            </div>
+
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#projects">Projects</a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link page-scroll" href="#contact">Contact</a>
           </li>
@@ -424,73 +442,77 @@
         <div class="col-lg-12">
           <div class="text-container">
             <div class="image-container">
-              <a href="project.php">
+              <a href="#project">
                 <img
                   class="img-fluid"
-                  src="images/project-1.jpg"
+                  src="images/project-1.png"
                   alt="alternative" />
               </a>
             </div>
             <!-- end of image-container -->
             <p>
-              <strong>For:</strong> Jumbotron, <strong>Project:</strong> web
-              design for their corporate websites and landing pages for
-              marketing campaigns
-              <a class="blue" href="project.php">details</a>
+              <strong>Client:</strong> Economic & Research Organization,
+              <strong>Service:</strong> Development of a professional web platform for data presentation, research publication, and organizational visibility to support economic analysis and reporting.
+              <a class="blue" href="https://jacorion.com/" target="_blank" rel="noopener noreferrer">
+                Live Preview
+              </a>
             </p>
           </div>
           <!-- end of text-container -->
           <div class="text-container">
             <div class="image-container">
-              <a href="project.php">
+              <a href="#projects">
                 <img
                   class="img-fluid"
-                  src="images/project-2.jpg"
+                  src="images/project-2.png"
                   alt="alternative" />
               </a>
             </div>
             <!-- end of image-container -->
             <p>
-              <strong>For:</strong> Carsrepo,
-              <strong>Project:</strong> designed and developed modern platform
-              for purchasing second hand cars online
-              <a class="blue" href="project.php">details</a>
+              <strong>Client:</strong> Retail Business,
+              <strong>Service:</strong> Design and development of a Point of Sale (POS) system for managing sales, inventory, and transactions to improve business efficiency.
+              <a class="blue" href="" target="_blank" rel="noopener noreferrer">
+
+              </a>
             </p>
           </div>
           <!-- end of text-container -->
           <div class="text-container">
             <div class="image-container">
-              <a href="project.php">
+              <a href="#projects">
                 <img
                   class="img-fluid"
-                  src="images/project-3.jpg"
+                  src="images/project-3.png"
                   alt="alternative" />
               </a>
             </div>
             <!-- end of image-container -->
             <p>
-              <strong>For:</strong> Truevideo,
-              <strong>Project:</strong> created a custom video editing and
-              upload web app for this awesome team
-              <a class="blue" href="project.php">details</a>
+              <strong>Client:</strong> Educational Institution,
+              <strong>Service:</strong> Design and development of a School Management System for managing student records, attendance, academic performance, and administrative operations.
+              <a class="blue" href="" target="_blank" rel="noopener noreferrer">
+
+              </a>
             </p>
           </div>
           <!-- end of text-container -->
           <div class="text-container">
             <div class="image-container">
-              <a href="project.php">
+              <a href="#projects">
                 <img
                   class="img-fluid"
-                  src="images/project-4.jpg"
+                  src="images/project-4.png"
                   alt="alternative" />
               </a>
             </div>
             <!-- end of image-container -->
             <p>
-              <strong>For:</strong> Evolosim,
-              <strong>Project:</strong> complete redesign of their corporate
-              website and platform update for their online shop
-              <a class="blue" href="project.php">details</a>
+              <strong>Client:</strong> Service Organization,
+              <strong>Service:</strong> Development of a ticket management system for handling customer requests, tracking issues, and improving support response efficiency.
+              <a class="blue" href="" target="_blank" rel="noopener noreferrer">
+
+              </a>
             </p>
           </div>
           <!-- end of text-container -->
@@ -511,19 +533,20 @@
         <div class="col-lg-4">
           <div class="text-container">
             <div class="image-container">
-              <a href="project.php">
+              <a href="#projects">
                 <img
                   class="img-fluid"
-                  src="images/work-1.jpg"
+                  src="images/work-1.png"
                   alt="alternative" />
               </a>
             </div>
             <!-- end of image-container -->
             <p>
-              <strong>For:</strong> Zigoland,
-              <strong>Project:</strong> started a new website from ground up
-              for a new product
-              <a class="blue" href="project.php">details</a>
+              <strong>Client:</strong> Isimbi Wine,
+              <strong>Service:</strong> Design and development of a modern website to showcase products, enhance brand visibility, and support customer engagement.
+              <a class="blue" href="https://isimbibeverages.com/" target="_blank" rel="noopener noreferrer">
+                Live Preview
+              </a>
             </p>
           </div>
           <!-- end of text-container -->
@@ -532,7 +555,7 @@
         <div class="col-lg-4">
           <div class="text-container">
             <div class="image-container">
-              <a href="project.php">
+              <a href="#projects">
                 <img
                   class="img-fluid"
                   src="images/work-2.jpg"
@@ -541,10 +564,11 @@
             </div>
             <!-- end of image-container -->
             <p>
-              <strong>For:</strong> Visodream,
-              <strong>Project:</strong> developed a new forum for the
-              Visodream community
-              <a class="blue" href="project.php">details</a>
+              <strong>Client:</strong> FinTech Solution,
+              <strong>Service:</strong> Development of a financial management Mobile Application to monitor expenses, control budgets, and provide insights for better financial decision-making.
+              <a class="blue" href="" target="_blank" rel="noopener noreferrer">
+
+              </a>
             </p>
           </div>
           <!-- end of text-container -->
@@ -660,7 +684,7 @@
           <div class="card">
             <div class="card-body">
               <p class="testimonial-text">
-                “Mark is a skilled developer which will do everything possible
+                Eng Emma is a skilled developer which will do everything possible
                 to deliver the project on time and I really appreciate that”
               </p>
               <div class="details">
@@ -680,7 +704,7 @@
           <div class="card">
             <div class="card-body">
               <p class="testimonial-text">
-                “Loved to work with Mark he's such an awesome developer with
+                “Loved to work with Eng Emma he's such an awesome developer with
                 great attention to details. He also has a great eye for
                 design”
               </p>
@@ -701,7 +725,7 @@
           <div class="card">
             <div class="card-body">
               <p class="testimonial-text">
-                “So glad we started working with Mark. We've used many times
+                “So glad we started working with Emma. We've used many times
                 his design and development skills for our inhouse online
                 projects”
               </p>
@@ -935,29 +959,21 @@
       <div class="row">
         <div class="col-lg-12">
           <!-- Contact Form -->
-          <form id="contactForm">
+          <form id="formid" action="">
             <div class="form-group">
-              <input
-                type="text"
-                class="form-control-input"
-                id="cname"
-                required />
+
               <label class="label-control" for="cname">Name</label>
+              <input name="name" type="text class=" form-control-input" id="cname" required />
             </div>
             <div class="form-group">
-              <input
-                type="email"
-                class="form-control-input"
-                id="cemail"
-                required />
+
               <label class="label-control" for="cemail">Email</label>
+              <input type="email" name="email" class="form-control-input" id="cemail" required />
             </div>
             <div class="form-group">
-              <textarea
-                class="form-control-textarea"
-                id="cmessage"
-                required></textarea>
-              <label class="label-control" for="cmessage">Project details</label>
+
+              <label class="label-control" for="cmessage">Message</label>
+              <textarea name="message" class="form-control-textarea" id="cmessage" required></textarea>
             </div>
             <div class="form-group">
               <button type="submit" class="form-control-submit-button">
@@ -1055,3 +1071,40 @@
 </body>
 
 </html>
+
+
+<script>
+  $('#formid').submit(function(e) {
+    e.preventDefault();
+    var _this = $(this)
+    if (_this[0].checkValidity() == false) {
+      _this[0].reportValidity();
+      return false;
+    }
+    $.ajax({
+      url: "contact.php",
+      data: new FormData($(this)[0]),
+      cache: false,
+      contentType: false,
+      processData: false,
+      method: 'POST',
+      type: 'POST',
+      dataType: 'json',
+      error: err => {
+        console.error(err)
+      },
+      success: function(resp) {
+        if (resp.status == 'success') {
+          toastr.success(resp.msg);
+          $('#formid')[0].reset();
+        } else if (resp.status == 'failed') {
+          toastr.error(resp.msg)
+        } else {
+          console.error(resp)
+        }
+        $("html, body").scrollTop(0);
+
+      }
+    })
+  })
+</script>
