@@ -28,7 +28,7 @@ try {
     $mail->Port = 587;
 
     // Recipients
-    $mail->setFrom('emma@pearl-host.com', 'ENGINEER OGANGI');
+    $mail->setFrom('emma@pearl-host.com', 'Engineer Ogangi');
     $mail->addAddress($sentemail); // Add a recipient
 
     // Content
@@ -73,7 +73,7 @@ try {
     $mail2->Port = 587;
 
     // Recipients
-    $mail2->setFrom('emma@pearl-host.com', 'DEVELOPER EMMANUEL');
+    $mail2->setFrom('emma@pearl-host.com', 'Engineer Ogangi');
     $mail2->addAddress($myemail); // Add a recipient
 
     // Content

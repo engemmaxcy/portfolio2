@@ -591,7 +591,7 @@
         <div class="col-lg-4">
           <div class="text-container">
             <div class="image-container">
-              <a href="project.php">
+              <a href="#projects">
                 <img
                   class="img-fluid"
                   src="images/work-3.jpg"
@@ -601,9 +601,8 @@
             <!-- end of image-container -->
             <p>
               <strong>For:</strong> Primoday,
-              <strong>Project:</strong> complete redesign of their corporate
-              website and platform
-              <a class="blue" href="project.php">details</a>
+              <strong>Project:</strong> Developed a high-performance desktop application for their corporate platform with native OS integration.
+
             </p>
           </div>
           <!-- end of text-container -->
@@ -615,7 +614,7 @@
         <div class="col-lg-4">
           <div class="text-container">
             <div class="image-container">
-              <a href="project.php">
+              <a href="#projects">
                 <img
                   class="img-fluid"
                   src="images/work-4.jpg"
@@ -624,9 +623,9 @@
             </div>
             <!-- end of image-container -->
             <p>
-              <strong>For:</strong> Nextlite,
-              <strong>Project:</strong> created a custom video editing and
-              upload web app <a class="blue" href="project.php">details</a>
+              <strong></strong> Nextlite,
+              <strong>Project:</strong> Payment Integration
+              Streamlined the checkout process for Nextlite using Stripe to manage secure subscriptions and video rendering credits.
             </p>
           </div>
           <!-- end of text-container -->
@@ -635,7 +634,7 @@
         <div class="col-lg-4">
           <div class="text-container">
             <div class="image-container">
-              <a href="project.php">
+              <a href="#projects">
                 <img
                   class="img-fluid"
                   src="images/work-5.jpg"
@@ -644,9 +643,9 @@
             </div>
             <!-- end of image-container -->
             <p>
-              <strong>For:</strong> Syncnow, <strong>Project:</strong> web
-              design for their corporate websites and landing pages
-              <a class="blue" href="project.php">details</a>
+              <strong>Client:</strong> Syncnow,
+              <strong>Project:</strong> Comprehensive redesign of corporate websites and landing pages for a modern, high-end digital identity.
+
             </p>
           </div>
           <!-- end of text-container -->
@@ -655,7 +654,7 @@
         <div class="col-lg-4">
           <div class="text-container">
             <div class="image-container">
-              <a href="project.php">
+              <a href="#projects">
                 <img
                   class="img-fluid"
                   src="images/work-6.jpg"
@@ -664,9 +663,9 @@
             </div>
             <!-- end of image-container -->
             <p>
-              <strong>For:</strong> Shifter, <strong>Project:</strong> started
-              a new website from ground up for a new product
-              <a class="blue" href="project.php">details</a>
+              <strong>Client:</strong> Shifter,
+              <strong>Project:</strong> Collaborated on the full-stack development of a new SaaS platform and product ecosystem from the ground up.
+
             </p>
           </div>
           <!-- end of text-container -->
@@ -1039,7 +1038,7 @@
                 <i class="fab fa-twitter fa-stack-1x"></i>
               </a>
             </span>
-            
+
             <span class="fa-stack">
               <a href="https://www.instagram.com/engemmaxcy" target="_blank">
                 <i class="fas fa-circle fa-stack-2x"></i>
@@ -1058,7 +1057,7 @@
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fab fa-github fa-stack-1x"></i>
               </a>
-           
+
           </div>
           <!-- end of social-container -->
         </div>
