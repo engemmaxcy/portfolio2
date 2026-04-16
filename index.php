@@ -35,11 +35,11 @@
   <!-- SEO Meta Tags -->
   <meta name="description" content="Your description" />
   <meta name="author" content="Ogangi Emmanuel" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-  
+
   <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
   <meta property="og:site_name" content="" />
   <!-- website name -->
@@ -113,18 +113,32 @@
         </ul>
         <span class="nav-item social-icons">
           <span class="fa-stack">
-            <a href="#your-link">
+            <a href="https://www.facebook.com/profile.php?id=100089222856566" target="_blank">
               <i class="fas fa-circle fa-stack-2x"></i>
               <i class="fab fa-facebook-f fa-stack-1x"></i>
             </a>
           </span>
-          <span class="fa-stack">
-            <a href="#your-link">
+          <span class="fa-stack" target="_blank">
+            <a href="https://x.com/EngEmmaxcy2020" target="_blank">
               <i class="fas fa-circle fa-stack-2x"></i>
               <i class="fab fa-twitter fa-stack-1x"></i>
             </a>
           </span>
-        </span>
+
+          <span class="fa-stack">
+            <a href="https://www.linkedin.com/in/engogangi-emmanuel/" target="_blank">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fab fa-linkedin-in fa-stack-1x"></i>
+            </a>
+          </span>
+
+          <span class="fa-stack">
+            <a href="https://www.youtube.com/@emmaxcy" target="_blank">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fab fa-youtube fa-stack-1x"></i>
+            </a>
+
+          </span>
       </div>
       <!-- end of navbar-collapse -->
     </div>
@@ -142,7 +156,7 @@
             <h1 class="h1-large">
               Detail-oriented and user-focused Software Engineer
             </h1>
-            <a class="btn-solid-lg page-scroll" href="#about">Discover</a>
+            <a class="btn-solid-lg rounded page-scroll" href="#about">Discover</a>
             <a class="btn-outline-lg page-scroll" href="#contact"><i class="fas fa-user"></i>Contact Me</a>
           </div>
           <!-- end of text-container -->
@@ -942,54 +956,69 @@
   <!-- end of questions -->
 
   <!-- Contact -->
-  <div id="contact" class="form-1 bg-gray">
+  <div id="contact" class="form-1 bg-light py-5">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h2>Contact details</h2>
-          <p class="p-heading">
+      <div class="row mb-5">
+        <div class="col-lg-12 text-center">
+          <h2 class="display-5 fw-bold">Contact Details</h2>
+          <p class="p-heading text-muted mx-auto" style="max-width: 700px;">
             Have a project in mind or need a reliable developer? Feel free to
-            reach out—I’m always open to discussing new ideas and
-            opportunities.
+            reach out—I’m always open to discussing new ideas and opportunities.
           </p>
         </div>
-        <!-- end of col -->
       </div>
-      <!-- end of row -->
-      <div class="row">
-        <div class="col-lg-12">
-          <!-- Contact Form -->
-          <form id="formid" action="">
-            <div class="form-group">
 
-              <label class="label-control" for="cname">Name</label>
-              <input name="name" type="text class=" form-control-input" id="cname" required />
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <div class="contact-info-card p-4 h-100 shadow-sm rounded">
+            <div class="info-item mb-4">
+              <h5 class="fw-bold text-primary">Email</h5>
+              <p><a href="mailto:ogangiemmanuel2020@gmail.com" class="text-decoration-none text-dark">ogangiemmanuel2020@gmail.com</a></p>
             </div>
-            <div class="form-group">
-
-              <label class="label-control" for="cemail">Email</label>
-              <input type="email" name="email" class="form-control-input" id="cemail" required />
+            <div class="info-item">
+              <h5 class="fw-bold text-primary">Contact</h5>
+              <p class="mb-1">+256 770 974 075</p>
+              <p>+256 740 987 907</p>
             </div>
-            <div class="form-group">
-
-              <label class="label-control" for="cmessage">Message</label>
-              <textarea name="message" class="form-control-textarea" id="cmessage" required></textarea>
-            </div>
-            <div class="form-group">
-              <button type="submit" class="form-control-submit-button">
-                Submit
-              </button>
-            </div>
-          </form>
-          <!-- end of contact form -->
+          </div>
         </div>
-        <!-- end of col -->
+
+        <div class="col-lg-8">
+          <div class="form-container p-4 shadow-sm rounded bg-white">
+            <form id="formid" action="">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <div class="form-group">
+                    <label class="form-label fw-semibold" for="cname">Name</label>
+                    <input name="name" type="text" class="form-control custom-input" id="cname" placeholder="Your Name" required />
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <div class="form-group">
+                    <label class="form-label fw-semibold" for="cemail">Email</label>
+                    <input type="email" name="email" class="form-control custom-input" id="cemail" placeholder="Your Email" required />
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <div class="form-group">
+                  <label class="form-label fw-semibold" for="cmessage">Message</label>
+                  <textarea name="message" class="form-control custom-input" id="cmessage" rows="5" placeholder="How can I help you?" required></textarea>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-lg w-100 form-control-submit-button">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-      <!-- end of row -->
     </div>
-    <!-- end of container -->
   </div>
-  <!-- end of form-1 -->
   <!-- end of contact -->
 
   <!-- Footer -->
@@ -999,35 +1028,37 @@
         <div class="col-lg-12">
           <div class="social-container">
             <span class="fa-stack">
-              <a href="#your-link">
+              <a href="https://www.facebook.com/profile.php?id=100089222856566" target="_blank">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fab fa-facebook-f fa-stack-1x"></i>
               </a>
             </span>
             <span class="fa-stack">
-              <a href="#your-link">
+              <a href="https://x.com/EngEmmaxcy2020" target="_blank">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fab fa-twitter fa-stack-1x"></i>
               </a>
             </span>
+            
             <span class="fa-stack">
-              <a href="#your-link">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-pinterest-p fa-stack-1x"></i>
-              </a>
-            </span>
-            <span class="fa-stack">
-              <a href="#your-link">
+              <a href="https://www.instagram.com/engemmaxcy" target="_blank">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fab fa-instagram fa-stack-1x"></i>
               </a>
             </span>
             <span class="fa-stack">
-              <a href="#your-link">
+              <a href="https://www.youtube.com/@emmaxcy" target="_blank">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fab fa-youtube fa-stack-1x"></i>
               </a>
             </span>
+
+            <span class="fa-stack">
+              <a href="https://github.com/engemmaxcy" target="_blank">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x"></i>
+              </a>
+           
           </div>
           <!-- end of social-container -->
         </div>

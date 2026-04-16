@@ -9,7 +9,7 @@ $sentmesso = $_POST['message'];
 
 
 $myemail = "ogangiemmanuel2020@gmail.com";
-$mynames = "Emma2020";
+$mynames = "Engineer Emmanuel Ogangi";
 
 require './PHPMailer/src/Exception.php';
 require './PHPMailer/src/PHPMailer.php';
@@ -28,7 +28,7 @@ try {
     $mail->Port = 587;
 
     // Recipients
-    $mail->setFrom('emma@pearl-host.com', 'DEVELOPER EMMANUEL');
+    $mail->setFrom('emma@pearl-host.com', 'ENGINEER OGANGI');
     $mail->addAddress($sentemail); // Add a recipient
 
     // Content
@@ -46,7 +46,7 @@ try {
 				  <p style="margin-bottom: 15px;">Thank you for contacting me! Your message has been received</p>
 				  <p style="margin-bottom: 15px;">I will get back to you as soon as possible.</p>
 				  <p style="margin-bottom: 15px;">Thank you for choosing Me.</p>
-				  <p style="margin-bottom: 15px;">Best regards,<br>Emma<br>Software Engineer<br><strong>PEARL TECH Software SOLUTIONS</strong><br>
+				  <p style="margin-bottom: 15px;">Best regards,<br>Ogangi Emmanuel<br>Software Engineer<br><strong>PEARL TECH SOFTWARE SOLUTIONS</strong><br>
 				
 				</body>
 				</html>
@@ -78,7 +78,7 @@ try {
 
     // Content
     $mail2->isHTML(true);                       // Set email format to HTML
-    $mail2->Subject = 'Formentrydetails';
+    $mail2->Subject = 'FORM ENTRY';
 
     // Email Body
     $email2Body = '
@@ -92,7 +92,7 @@ try {
 				  <p style="margin-bottom: 15px;">Email: <b>' . $sentemail . '</b>.</p>
 				  <p style="margin-bottom: 15px;">Message: <br><b>' . $sentmesso . '</b>.</p>
 				  <p style="margin-bottom: 15px;">Kindly ignore if not interested</p>
-				  <p style="margin-bottom: 15px;">Regards,<br>Management<br>PEARL TECH SOFTWARE SOLUTION<br>
+				  <p style="margin-bottom: 15px;">Regards,<br>Management<br>PEARL TECH SOFTWARE SOLUTIONS<br>
 				
 				  <a href="https://mail.hostinger.com/" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: #fff;
 				  text-decoration: none; border-radius: 5px; margin-top: 15px;">REPLY THIS MAIL</a>
