@@ -3,9 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     .toast-success {
@@ -957,64 +955,110 @@
   <!-- Contact -->
   <div id="contact" class="form-1 bg-light py-5">
     <div class="container">
-      <div class="row mb-5">
-        <div class="col-lg-12 text-center">
-          <h2 class="display-5 fw-bold">Contact Details</h2>
-          <p class="p-heading text-muted mx-auto" style="max-width: 700px;">
-            Have a project in mind or need a reliable developer? Feel free to
-            reach out—I’m always open to discussing new ideas and opportunities.
-          </p>
-        </div>
+
+      <!-- Section Header -->
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold">Contact Details</h2>
+        <p class="text-muted mx-auto" style="max-width: 650px;">
+          Have a project in mind or need a reliable developer? Feel free to
+          reach out—I’m always open to discussing new ideas and opportunities.
+        </p>
       </div>
 
-      <div class="row g-5">
+      <div class="row g-4 align-items-stretch">
+
+        <!-- LEFT: CONTACT INFO -->
         <div class="col-lg-4">
-          <div class="contact-info-card p-4 h-100 shadow-sm rounded">
-            <div class="info-item mb-4">
-              <h5 class="fw-bold text-primary">Email</h5>
-              <p><a href="mailto:ogangiemmanuel2020@gmail.com" class="text-decoration-none text-dark">ogangiemmanuel2020@gmail.com</a></p>
+          <div class="contact-info-card p-4 shadow rounded-4 bg-white h-100">
+
+            <h5 class="fw-bold mb-4">Contact Info</h5>
+
+            <!-- Email -->
+            <div class="info-item d-flex align-items-start mb-4">
+              <div class="icon-box me-3">
+                <i class="bi bi-envelope-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-semibold mb-1">Email</h6>
+                <a href="mailto:ogangiemmanuel2020@gmail.com" class="d-block text-decoration-none text-dark small">
+                  ogangiemmanuel2020@gmail.com
+                </a>
+                <a href="mailto:emma@pearl-host.com" class="d-block text-decoration-none text-dark small">
+                  emma@pearl-host.com
+                </a>
+              </div>
             </div>
-            <div class="info-item">
-              <h5 class="fw-bold text-primary">Contact</h5>
-              <p class="mb-1">+256 770 974 075</p>
-              <p>+256 740 987 907</p>
+
+            <!-- Phone -->
+            <div class="info-item d-flex align-items-start mb-4">
+              <div class="icon-box me-3">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-semibold mb-1">Phone</h6>
+                <p class="mb-0 small">+256 770 974 075</p>
+                <p class="mb-0 small">+256 740 987 907</p>
+              </div>
             </div>
+
+            <!-- Location -->
+            <div class="info-item d-flex align-items-start">
+              <div class="icon-box me-3">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-semibold mb-1">Location</h6>
+                <p class="mb-0 small">Kampala, Uganda</p>
+              </div>
+            </div>
+
           </div>
         </div>
 
+        <!-- RIGHT: FORM -->
         <div class="col-lg-8">
-          <div class="form-container p-4 shadow-sm rounded bg-white">
-            <form id="formid" action="">
-              <div class="row">
-                <div class="col-md-6 mb-3">
-                  <div class="form-group">
-                    <label class="form-label fw-semibold" for="cname">Name</label>
-                    <input name="name" type="text" class="form-control custom-input" id="cname" placeholder="Your Name" required />
-                  </div>
+          <div class="form-container p-4 p-md-5 shadow-sm rounded-4 bg-white h-100 position-relative">
+
+            <!-- Loader -->
+            <div id="formLoader" class="loader-overlay">
+              <div class="loader"></div>
+            </div>
+
+            <form id="formid">
+
+              <div class="row g-3">
+
+                <!-- Name -->
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold">Name</label>
+                  <input name="name" type="text" class="form-control custom-input" placeholder="Your Name" required>
                 </div>
-                <div class="col-md-6 mb-3">
-                  <div class="form-group">
-                    <label class="form-label fw-semibold" for="cemail">Email</label>
-                    <input type="email" name="email" class="form-control custom-input" id="cemail" placeholder="Your Email" required />
-                  </div>
+
+                <!-- Email -->
+                <div class="col-md-6">
+                  <label class="form-label fw-semibold">Email</label>
+                  <input type="email" name="email" class="form-control custom-input" placeholder="Your Email" required>
                 </div>
+
+                <!-- Message -->
+                <div class="col-12">
+                  <label class="form-label fw-semibold">Message</label>
+                  <textarea name="message" class="form-control custom-input" rows="5" placeholder="How can I help you?" required></textarea>
+                </div>
+
+                <!-- Button -->
+                <div class="col-12 mt-2">
+                  <button type="submit" class="btn btn-primary btn-lg w-100 fw-semibold">
+                    Send Message
+                  </button>
+                </div>
+
               </div>
 
-              <div class="mb-3">
-                <div class="form-group">
-                  <label class="form-label fw-semibold" for="cmessage">Message</label>
-                  <textarea name="message" class="form-control custom-input" id="cmessage" rows="5" placeholder="How can I help you?" required></textarea>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-lg w-100 form-control-submit-button">
-                  Send Message
-                </button>
-              </div>
             </form>
           </div>
         </div>
+
       </div>
     </div>
   </div>
@@ -1076,8 +1120,8 @@
       <div class="row">
         <div class="col-lg-12">
           <p class="p-small">
-            Copyright © 2026
-            <a class="no-line" href="#your-link">Emmanuel Ogangi</a>
+            Copyright &copy; <?php echo date("Y"); ?>
+            <a class="no-line footer-link" href="">Emmanuel Ogangi</a>
           </p>
         </div>
         <!-- end of col -->
@@ -1111,6 +1155,7 @@
       _this[0].reportValidity();
       return false;
     }
+    $('#formLoader').css('display', 'flex');
     $.ajax({
       url: "contact.php",
       data: new FormData($(this)[0]),
@@ -1122,6 +1167,7 @@
       dataType: 'json',
       error: err => {
         console.error(err)
+        $('#formLoader').fadeOut(200);
       },
       success: function(resp) {
         if (resp.status == 'success') {
@@ -1133,6 +1179,8 @@
           console.error(resp)
         }
         $("html, body").scrollTop(0);
+
+        $('#formLoader').fadeOut(200);
 
       }
     })
